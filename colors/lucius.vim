@@ -147,6 +147,10 @@ if g:lucius_style == "dark"
     hi ColorColumn  guifg=NONE      guibg=#403630   ctermfg=NONE   ctermbg=101       gui=none      cterm=none
     hi Ignore       guifg=bg                        ctermfg=bg
 
+    " == buftabs ==
+    hi BufLine      guifg=#202020   guibg=#c0c0c0   ctermfg=bg     ctermbg=252       gui=none      cterm=none
+    hi link BufLineSel TabLineSel
+
 
 elseif g:lucius_style == "light"
 
@@ -230,6 +234,10 @@ elseif g:lucius_style == "light"
     hi WildMenu     guifg=#000000   guibg=#d0e0f0   ctermfg=16     ctermbg=153       gui=none      cterm=none
     hi ColorColumn  guifg=NONE      guibg=#f0f0e0   ctermfg=NONE   ctermbg=230       gui=none      cterm=none
     hi Ignore       guifg=bg                        ctermfg=bg
+
+    " == buftabs ==
+    hi StatusLine   guifg=#ffffff   guibg=#505050   ctermfg=231    ctermbg=239       gui=none      cterm=none
+    hi link BufLineSel TabLineSel
 
 
 endif
